@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+$kodilla-grey: #7d7d7b;
+$kodilla-black: #000;
+$kodilla-white: #fff;
+$kodilla-cherry: #983352;
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.wspolny {
+    margin: 10px 0;
+    background-color: $kodilla-grey; 
+}
+
+.pierwszy {
+    @extend .wspolny;
+    color: $kodilla-black;
+}
+
+.drugi {
+    @extend .wspolny;
+    color: $kodilla-white;
+}
+
+.trzeci {
+    @extend .wspolny;
+    color: $kodilla-cherry;
+}
